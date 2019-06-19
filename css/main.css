@@ -4,6 +4,7 @@ body {
     font-family: 'Montserrat',
         sans-serif;
     scroll-behavior: smooth;
+    margin: 0%;
 }
 
 .navbar {
@@ -12,14 +13,11 @@ body {
 
 }
 
-.container {
-    height: 100%;
-}
 
-#landing-image {
-    height: inherit;
-}
+
 
 .full-section {
     height: 100%;
+    background-repeat: no-repeat;
+    background-color: red
 }
