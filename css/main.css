@@ -13,9 +13,28 @@ body {
 
 }
 
+
 .full-section {
     height: 100%;
-    background-position: right;
     background-repeat: no-repeat;
-    background-image: url("/img/smlanding.png");
+    background-image: url("/img/landing2.png");
+    background-size: cover;
+}
+
+#welcome-ruzyan {
+    padding-top: 13rem;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+@media only screen and (min-width: 450px) {
+    .full-section {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url("/img/lglanding.png");
+        background-size: cover;
+
+
+    }
+
 }
