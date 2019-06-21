@@ -1,40 +1,120 @@
 html,
 body {
-    height: 100%;
-    font-family: 'Montserrat',
-        sans-serif;
-    scroll-behavior: smooth;
-    margin: 0%;
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
+	margin: 0%;
 }
 
 .navbar {
-    text-align: center;
-    text-transform: uppercase;
-
+	text-align: center;
+	text-transform: uppercase;
 }
 
-
 .full-section {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url("/img/landing2.png");
-    background-size: cover;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-image: url("/img/landing2.png");
+	background-size: cover;
 }
 
 #welcome-ruzyan {
-    padding-top: 13rem;
-    font-size: 1.5rem;
-    padding-left: 5rem;
+	padding-top: 13rem;
+	font-size: 1.5rem;
+	padding-left: 0.2rem;
+}
+
+.dropdown-menu.fade {
+	display: block;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.show > .dropdown-menu.fade {
+	pointer-events: auto;
+	opacity: 1;
 }
 
 @media only screen and (min-width: 450px) {
-    .full-section {
-        height: 100%;
-        background-repeat: no-repeat;
-        background-image: url("/img/lglanding.png");
-        background-size: cover;
+	.full-section {
+		height: 100%;
+		background-repeat: no-repeat;
+		background-image: url("/img/lglanding.png");
+		background-size: cover;
+	}
+}
 
+.button {
+	border-radius: 1rem;
+	background-color: black;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.9rem;
+	padding: 0.7rem;
+	width: auto;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
 
-    }
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: sticky;
+	transition: 0.5s;
+}
 
+.button span::after {
+	content: "\02C5";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	bottom: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 20px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+#category {
+	height: 100%;
+}
+
+#contact {
+	height: 100%;
+}
+
+#cat {
+	padding-top: 5rem;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.card button:hover {
+	opacity: 0.7;
 }
