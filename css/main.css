@@ -4,11 +4,15 @@ body {
 	font-family: "Montserrat", sans-serif;
 	scroll-behavior: smooth;
 	margin: 0%;
+	background-color: beige;
 }
 
 .navbar {
 	text-align: center;
 	text-transform: uppercase;
+	-webkit-box-shadow: 0 8px 6px -8px #999;
+	-moz-box-shadow: 0 8px 6px -8px #999;
+	box-shadow: 0 8px 6px -8px #999;
 }
 
 .full-section {
@@ -30,19 +34,11 @@ body {
 	pointer-events: none;
 }
 
-.show > .dropdown-menu.fade {
+.show>.dropdown-menu.fade {
 	pointer-events: auto;
 	opacity: 1;
 }
 
-@media only screen and (min-width: 450px) {
-	.full-section {
-		height: 100%;
-		background-repeat: no-repeat;
-		background-image: url("/img/lglanding.png");
-		background-size: cover;
-	}
-}
 
 .button {
 	border-radius: 1rem;
@@ -83,7 +79,7 @@ body {
 	right: 0;
 }
 
-#category {
+#bridal {
 	height: 100%;
 }
 
@@ -95,26 +91,128 @@ body {
 	padding-top: 5rem;
 }
 
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	max-width: 300px;
-	margin: auto;
-	text-align: center;
-	font-family: "Montserrat", sans-serif;
+
+
+#landing-logo {
+	width: 14rem;
+	height: 4.5rem;
+	margin-bottom: 0%;
 }
 
-.card button {
-	border: none;
-	outline: 0;
-	padding: 12px;
-	color: white;
-	background-color: #000;
+#cont {
+	padding-top: 12rem;
+}
+
+#tag-line {
+	margin-top: 0%;
+	padding-left: 7rem;
+	font-size: 1rem;
+	font-family: 'Pinyon Script',
+		cursive;
+}
+
+.navbar-toggler-icon {
+	color: #000;
+}
+
+#ads {
+	margin: 30px 0 30px 0;
+
+}
+
+
+
+#ads .card-detail-badge {
+	background: #1e1717;
 	text-align: center;
-	cursor: pointer;
-	width: 100%;
+	border-radius: 30px 30px 30px 30px;
+	color: #ffffff;
+	padding: 5px 10px;
+	font-size: 14px;
+	margin-top: 1rem;
+}
+
+
+
+#ads .card:hover {
+	background: #fff;
+	box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+
+#ads .card-image-overlay {
+	font-size: 20px;
+
+}
+
+
+#ads .card-image-overlay span {
+	display: inline-block;
+}
+
+
+#ads .ad-btn {
+	text-transform: uppercase;
+	width: 150px;
+	height: 40px;
+	border-radius: 80px;
+	font-size: 16px;
+	line-height: 35px;
+	text-align: center;
+	border: 3px solid black;
+	display: block;
+	text-decoration: none;
+	margin: 20px auto 1px auto;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	background-color: black;
+}
+
+#ads .ad-btn:hover {
+	background-color: black;
+	color: #1e1717;
+	border: 2px solid black;
+	background: transparent;
+	transition: all 0.3s ease;
+	box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+#ads .ad-title h5 {
+	text-transform: uppercase;
 	font-size: 18px;
 }
 
-.card button:hover {
-	opacity: 0.7;
+#OW {
+	padding-top: 4rem;
+	padding-left: 5rem;
+}
+
+.card {
+	margin-bottom: 1.5rem;
+}
+
+#bridal-couture {
+	padding-top: 5rem;
+	padding-left: 3rem;
+}
+
+@media only screen and (min-width: 420px) {
+	.full-section {
+		height: 100%;
+		background-repeat: no-repeat;
+		background-image: url("/img/lglanding.png");
+		background-size: cover;
+
+	}
+
+	#tag-line {
+		margin-top: 0%;
+		padding-left: 7rem;
+		font-size: 1.5rem;
+		font-weight: normal;
+		font-family: 'Pinyon Script',
+			cursive;
+	}
 }
